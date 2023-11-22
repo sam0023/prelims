@@ -2,12 +2,13 @@ import React, {useState} from 'react';
 import {useParams} from 'react-router-dom';
 import chess from '../chess.mp3';
 import STtopics from '../Subjects/ScienceAndTech/STtopics';
-
+import SociologyTopics from '../Subjects/Sociology/SociologyTopics';
 import './index.css';
 
 const subjects = {
 
 	st: STtopics,
+	sociology: SociologyTopics,
 };
 
 const questionsList = (subjectId, subtopicId) => {

@@ -9,11 +9,20 @@ const st = [
 	},
 
 ];
+const sociology = [
+	{
+		id: 1, topicId: 'caste', topicName: 'Caste',
+	},
+];
 const subjects = [
 
 	{
 		id: 'st',
 		data: st,
+	},
+	{
+		id: 'sociology',
+		data: sociology,
 	},
 ];
 const SubtopicList = props => {

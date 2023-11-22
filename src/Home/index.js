@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 function Home() {
 	const subjects = [
 
-		{id: 6, name: 'Science and Technology', code: 'st'},
-		// Add more subjects here
+		{id: 1, name: 'Science and Technology', code: 'st'},
+		{id: 2, name: 'Sociology', code: 'sociology'},
 	];
 
 	return (
