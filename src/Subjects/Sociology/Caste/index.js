@@ -79,10 +79,22 @@ const Caste = [
 		questionText: 'Religious or Samskar Theory',
 		ans: ['Hocrt & Emile Senart'],
 	},
-	// {
-	// 	questionText: '',
-	// 	ans: [''],
-	// },
+	{
+		questionText: 'Concept of social mobility given by',
+		ans: ['P.A Sorokin'],
+	},
+	{
+		questionText: 'Embourgeoisement',
+		ans: ['Peasents becomes landlords'],
+	},
+	{
+		questionText: 'Proletarianzation',
+		ans: ['Landlord becomes landless'],
+	},
+	{
+		questionText: 'Concept of Tribalistion is given by',
+		ans: ['Kalika, in Udaipur dist'],
+	},
 
 ];
 

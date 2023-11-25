@@ -13,6 +13,9 @@ const sociology = [
 	{
 		id: 1, topicId: 'caste', topicName: 'Caste',
 	},
+	{
+		id: 2, topicId: 'family', topicName: 'Family',
+	},
 ];
 const subjects = [
 
@@ -25,6 +28,7 @@ const subjects = [
 		data: sociology,
 	},
 ];
+
 const SubtopicList = props => {
 	// Replace with your subtopic data
 	console.log(props);
