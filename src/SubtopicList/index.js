@@ -17,6 +17,16 @@ const sociology = [
 		id: 2, topicId: 'family', topicName: 'Family',
 	},
 ];
+
+const History = [
+	{
+		id: 1, topicId: 'tribalmovements', topicName: 'Tribal Movements',
+	},
+	{
+		id: 2, topicId: 'kisanmovements', topicName: 'Kisan Movements',
+	},
+];
+
 const subjects = [
 
 	{
@@ -26,6 +36,10 @@ const subjects = [
 	{
 		id: 'sociology',
 		data: sociology,
+	},
+	{
+		id: 'history',
+		data: History,
 	},
 ];
 

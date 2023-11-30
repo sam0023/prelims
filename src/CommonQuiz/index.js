@@ -1,14 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import chess from '../chess.mp3';
 import STtopics from '../Subjects/ScienceAndTech/STtopics';
 import SociologyTopics from '../Subjects/Sociology/SociologyTopics';
+import HistoryTopics from '../Subjects/History/HistoryTopics';
 import './index.css';
 
 const subjects = {
 
 	st: STtopics,
 	sociology: SociologyTopics,
+	history: HistoryTopics,
 };
 
 const questionsList = (subjectId, subtopicId) => {
@@ -27,8 +29,24 @@ const CommonQuiz = () => {
 	const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 	const [showAnswer, setShowAnswer] = useState(false);
 	const [questionNo, setQuestionNo] = useState(1);
+	const [isDarkMode, setDarkMode] = useState(false);
 
 	const audioRef = React.createRef();
+
+	// UseEffect to apply theme on initial render
+	useEffect(() => {
+		applyTheme();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [isDarkMode]);
+
+	const applyTheme = () => {
+		const {body} = document;
+		body.classList.toggle('dark-mode', isDarkMode);
+	};
+
+	const toggleDarkMode = () => {
+		setDarkMode(!isDarkMode);
+	};
 
 	// Function to get a random question
 	function getRandomQuestion() {
@@ -58,11 +76,14 @@ const CommonQuiz = () => {
 	return (
 		<div className='quizcontainer'>
 			<h2>Quiz-Total question:{questions.length}</h2>
+			<button className='button-64' onClick={toggleDarkMode}>
+				{isDarkMode ? 'Light Mode' : 'Dark Mode'}
+			</button>
 			<p>Question {questionNo}</p>
 			<p>{questions[currentQuestionIndex].questionText}</p>
 
-			<button onClick={showAnswerForCurrentQuestion}>Show Answer</button>
-			<button onClick={moveToNextQuestion}>Next Question</button>
+			<button className='button-1' onClick={showAnswerForCurrentQuestion}>Show Answer</button>
+			<button className='button-1' onClick={moveToNextQuestion}>Next Question</button>
 
 			{showAnswer && (
 				<div>

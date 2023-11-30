@@ -6,6 +6,7 @@ function Home() {
 
 		{id: 1, name: 'Science and Technology', code: 'st'},
 		{id: 2, name: 'Sociology', code: 'sociology'},
+		{id: 3, name: 'History', code: 'history'},
 	];
 
 	return (
