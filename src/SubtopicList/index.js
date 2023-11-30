@@ -25,6 +25,9 @@ const History = [
 	{
 		id: 2, topicId: 'kisanmovements', topicName: 'Kisan Movements',
 	},
+	{
+		id: 3, topicId: 'socialreforms', topicName: 'Social Reforms',
+	},
 ];
 
 const subjects = [
