@@ -16,6 +16,14 @@ const sociology = [
 	{
 		id: 2, topicId: 'family', topicName: 'Family',
 	},
+	{
+		id: 3, topicId: 'casteism', topicName: 'Casteism',
+	},
+	{
+		id: 4, topicId: 'communalism', topicName: 'Communalism',
+	},
+	{id: 5, topicId: 'regionalism', topicName: 'regionalism'},
+	{id: 6, topicId: 'crimeAgainstWomen', topicName: 'Crime Against Women'},
 ];
 
 const History = [
