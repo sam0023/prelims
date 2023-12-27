@@ -60,7 +60,11 @@ const CommonQuiz = () => {
 	// Function to show the answer for the current question
 	function showAnswerForCurrentQuestion() {
 		audioRef.current.play();
-		setShowAnswer(true);
+		if (showAnswer) {
+			moveToNextQuestion();
+		} else {
+			setShowAnswer(true);
+		}
 	}
 
 	// Function to move to the next random question
