@@ -53,7 +53,7 @@ const TribalMovements = [
 	},
 	{
 		questionText: 'Paika Rebellion',
-		ans: ['Durgan singh', 'Odisa'],
+		ans: ['Durgan singh❌ , Bakshi Jagabandhu', 'Odisa'],
 	},
 
 ];
