@@ -29,7 +29,7 @@ const TribalMovements = [
 	},
 	{
 		questionText: 'Ramosi Vidhroh',
-		ans: ['Chitar singh', 'M.H'],
+		ans: ['Vasudev Balwant Phadke,Chitar singh ', 'M.H'],
 	},
 	{
 		questionText: 'Kuka Vidhroh',

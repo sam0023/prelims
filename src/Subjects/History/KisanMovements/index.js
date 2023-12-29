@@ -1,6 +1,6 @@
 const KisanMovements = [
 	{
-		questionText: 'Books written on Neil Vidhroh',
+		questionText: 'Books written on Indigo Movement',
 		ans: ['Neil Derphan-by Deen bhandu Mitro', 'Hindu Pratiotic-Haris chandra Mukharjee'],
 	},
 	{
@@ -11,10 +11,10 @@ const KisanMovements = [
 		questionText: 'Eka movement',
 		ans: ['Led by Madari pasi', '1921', 'Awadh'],
 	},
-	// {
-	// 	questionText: '',
-	// 	ans: [''],
-	// },
+	{
+		questionText: 'Ramosi Vidhroh',
+		ans: ['Vasudev Balwant Phadke,Chitar singh ', 'M.H'],
+	},
 
 ];
 
